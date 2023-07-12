@@ -7,8 +7,7 @@ main {
    display: flex;
    align-items: center;
    flex-direction: column;
-   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(./street.jpg);
+   background: url(./street.jpg);
    /* background-image: url(./image/street.jpg); */
    background-size: cover;
    background-repeat: repeat;
