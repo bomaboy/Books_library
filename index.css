@@ -1,0 +1,122 @@
+* {
+   margin: 0%;
+   padding: 0%;
+}
+
+main {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(./street.jpg);
+   /* background-image: url(./image/street.jpg); */
+   background-size: cover;
+   background-repeat: repeat;
+   min-height: 100vh;
+}
+
+#main {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 90vw;
+}
+
+.books {
+   display: flex;
+   flex-direction: column;
+   margin: 20px 0px;
+   border: 1px solid black;
+   height: 60vh;
+   text-align: center;
+   line-height: 30px;
+   padding-bottom: 10px;
+   background-color: white;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.books img {
+   width: 20vw;
+   height: 200px;
+}
+
+.books p {
+   width: 19vw;
+}
+
+form {
+   margin-top: 50px;
+}
+
+input {
+   width: 35vw;
+   height: 50px;
+   outline: none;
+   border: 1px solid black;
+   padding-left: 15px;
+}
+
+form button {
+   height: 50px;
+   width: 100px;
+   border: none;
+   color: white;
+   background-color: blue;
+   margin-left: -3px;
+}
+/* .......Desktop view......... */
+/* @media only screen and (max-width: 1200px) {
+
+} */
+
+/* ....tablet view........ */
+@media only screen and (max-width: 800px) {
+   #main {
+      width: 95vw;
+   }
+
+   .books {
+      height: 70vh;
+   }
+
+   .books img {
+      width: 45vw;
+      height: 40vh;
+   }
+
+   .books p {
+      width: 45vw;
+   }
+}
+
+/* ......phone view........ */
+@media only screen and (max-width: 400px) {
+   #main {
+      width: 90vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .books img {
+      width: 90vw;
+      height: 40vh;
+   }
+
+   .books {
+      height: 60vh;
+   }
+
+   .books p {
+      width: 90vw;
+      display: flex;
+   }
+
+   form button {
+      width: 20vw;
+   }
+
+   input {
+      width: 40vw;
+   }
+}
